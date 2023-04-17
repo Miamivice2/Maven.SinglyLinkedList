@@ -8,16 +8,24 @@ public class Node<T>{
         this.data = data;
         next = null;
     }
+
     public void setData(T data){
         this.data = data;
     }
 
-    public Node<T>getNext(){
-        return next;
-    }
-    public void setNext(Node<T>node){
-        this.next = node;
+    public T getData(){
+        return data;
+
     }
 
+    public void setNext(Node<T> node){
+        this.next = node;
+
+    }
+
+    public Node<T> getNext(){
+        return next;
+
+    }
 
 }

@@ -12,7 +12,12 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="CR-MesoLabs-Collections-SinglyLinkedList" target="1.5" />
-      <module name="singlylinkedlist" target="1.5" />
+      <module name="singlylinkedlist" target="11" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="singlylinkedlist" options="--add-exports java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED" />
+    </option>
   </component>
 </project>
